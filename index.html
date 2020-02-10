@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" url="./css/style.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
 		<header>	
 			<nav>
 				<div class="logo_wrapper">
-					<svg width="128" height="128" style="enable-background:new 0 0 128 128;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<svg viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<g>
 						  <radialGradient id="SVGID_1_" cx="44.9711" cy="56.6804" gradientTransform="matrix(1.0131 -6.244914e-03 -6.244914e-03 1.003 0.5425 -0.2582)" gradientUnits="userSpaceOnUse" r="71.7534">
 							<stop offset="0" style="stop-color:#22B511"/>
@@ -46,13 +47,13 @@
 					  </svg>
 				</div>
 				<ul class="main-menu">
-					<button type="button" class="main-menu_button">#</button>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">How to Cook</a></li>
-					<li><a href="#">Questionnaire</a></li>
+					<button type="button" class="main-menu_button main-menu_button--hidden">#</button>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#cook">How to Cook</a></li>
+					<li><a href="#questions">Questionnaire</a></li>
 				</ul>
 			</nav>
-			<a href="#">Fruit or vegetable?</a>
+			<a class="section-link" href="#f_or_v">Fruit or vegetable?</a>
 		</header>
 		<main>
 			<div class="heading-wrapper">
@@ -60,9 +61,9 @@
 				<p>Avocado has gained popularity due to its stellar nutrient profile and diverse culinary applications. 
 					Rich in fiber, potassium, heart-healthy fats, and powerful antioxidants, this food may also offer various health benefits.</p>
 			</div>
-			<div class="section-wrapper">
+			<div class="text-section-wrapper">
 				<section class="content">
-					<h3>Fruit or vegetable?</h3>
+					<h3 id="f_or_v">Fruit or vegetable?</h3>
 					<p>Avocado is a fruit.</p>
 					<p>More specifically, botanists define it as a large berry with a single seed.<br>
 					Although it’s not nearly as sweet as many other fruits, it falls under the definition of fruit, which is "the sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food".<br>
@@ -73,14 +74,50 @@
 				</section>
 			</div>
 			<div class="heading-wrapper">
-				<h2>Gallery</h2>
+				<h2 id="gallery">Gallery</h2>
 			</div>
-			<div>
-				<!--Slider place-->
-			</div>
+			<div class="slider">
+				<div class="slider__wrapper">
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-1.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-2.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-3.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-4.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-5.png">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-6.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-7.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-8.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-9.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-10.jpg">
+				  </div>
+				  <div class="slider__item">
+					<img height="300" width="300" src="./img/Gallery-11.jpg">
+				  </div>
+				</div>
+				<a class="slider__control slider__control_left" href="#" role="button"></a>
+				<a class="slider__control slider__control_right" href="#" role="button"></a>
+			  </div>
 			<div class="section-wrapper">
 				<section class="content content_video">
-					<h3>How to add avocados to your diet?</h3>
+					<h3 id="cook">How to add avocados to your diet?</h3>
 					<p>Avocados have many culinary applications.<br>
 					They’re most commonly used to make guacamole.<br>
 					This is done by simply mashing the avocado with lemon juice and adding other optional ingredients, such as onions, cilantro, chili, and tomatoes.<br>
@@ -92,7 +129,7 @@
 				</section>
 			</div>>
 			<div class="heading-wrapper">
-				<h2>Questionnaire</h2>
+				<h2 id="questions">Questionnaire</h2>
 			</div>
 			<div class="section-wrapper">
 				<form>
@@ -117,5 +154,6 @@
 		<footer>
 			<!--place for soc icons-->
 		</footer>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
