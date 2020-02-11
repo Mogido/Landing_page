@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
 		<header>	
-			<nav>
+			<nav id="nav-bar">
 				<div class="logo_wrapper">
 					<svg viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<g>
@@ -46,8 +47,13 @@
 						<path d="M92.45,64.39C86.89,55.97,73.59,47.24,66,50.67c-7.2,3.25-10.31,15.26-7.67,25 C61.86,88.68,75.48,96.56,85,92.33C94.47,87.99,99.88,75.64,92.45,64.39z" style="fill:url(#SVGID_4_);"/>
 					  </svg>
 				</div>
+				<div class="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul class="main-menu">
-					<button type="button" class="main-menu_button main-menu_button--hidden">#</button>
 					<li><a href="#gallery">Gallery</a></li>
 					<li><a href="#cook">How to Cook</a></li>
 					<li><a href="#questions">Questionnaire</a></li>
@@ -115,7 +121,7 @@
 				<a class="slider__control slider__control_left" href="#" role="button"></a>
 				<a class="slider__control slider__control_right" href="#" role="button"></a>
 			  </div>
-			<div class="section-wrapper">
+			<div class="text-section-wrapper cook-wrapper">
 				<section class="content content_video">
 					<h3 id="cook">How to add avocados to your diet?</h3>
 					<p>Avocados have many culinary applications.<br>
@@ -125,35 +131,52 @@
 					<p>They also make a great topping for salads. Due their high fat content, they help you absorb vitamins from other vegetables in the meal (7 Trusted Source).<br>
 					Furthermore, their smooth and creamy texture makes them a great choice for puddings or smoothies.<br>
 					Lastly, avocados can be used as a replacement for butter — either as a spread or in baking.</p>
-					<div class="video-wrapper">#</div>
+					<div class="video-wrapper">
+						<iframe  src="https://www.youtube.com/embed/WDRujOJVykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</section>
-			</div>>
+			</div>
 			<div class="heading-wrapper">
 				<h2 id="questions">Questionnaire</h2>
 			</div>
-			<div class="section-wrapper">
-				<form>
-					<label class="check-buttons">Your favorite avocado dish:
-						<label><input type="radio" name="dish" value="Seasoned">Seasoned</label>
-						<label><input type="radio" name="dish" value="Stuffed">Stuffed</label>
-						<label><input type="radio" name="dish" value="In scrambled eggs">In scrambled eggs</label>
-						<label><input type="radio" name="dish" value="On toast">On toast</label>
-						<label><input type="radio" name="dish" value="In guacamole">In guacamole</label>
-						<label><input type="radio" name="dish" value="As a substitute for mayo/sour cream">As a substitute for mayo/sour cream</label>
-						<label><input type="radio" name="dish" value="In soups">In soups</label>
-					</label>
-					<textarea class="comment-field" name="comment" rows="10" placeholder="Enter your comment here..."></textarea>
-					<label id="name-label" for="name">Your name:</label>
-					<input id="name" type="text" placeholder="Enter your name" required>
-					<label id="email-label" for="email">Your email:</label>
-					<input id="email" type="email" placeholder="Enter your email" required>
-					<button id="submit" type="submit">Submit</button>
-				</form>
+			<div class="text-section-wrapper form-wrapper">
+				<div class="content form-content">
+					<form>
+						<label class="check-buttons">Your favorite avocado dish:
+							<label class="variable"><input type="radio" name="dish" value="Seasoned">Seasoned</label>
+							<label class="variable"><input type="radio" name="dish" value="Stuffed">Stuffed</label>
+							<label class="variable"><input type="radio" name="dish" value="In scrambled eggs">In scrambled eggs</label>
+							<label class="variable"><input type="radio" name="dish" value="On toast">On toast</label>
+							<label class="variable"><input type="radio" name="dish" value="In guacamole">In guacamole</label>
+							<label class="variable"><input type="radio" name="dish" value="As a substitute for mayo/sour cream">As a substitute for mayo/sour cream</label>
+							<label class="variable"><input type="radio" name="dish" value="In soups">In soups</label>
+							<label class="variable"><input type="radio" name="dish" value="Another:">Another</label>
+						</label>
+						<textarea class="comment-field" name="comment" rows="5" placeholder="Enter your comment here..."></textarea>
+						<div class="input-wrapper">
+							<label id="name-label" for="name">Your name:</label>
+							<input id="name" type="text" required>
+						</div>
+						<div class="input-wrapper">
+							<label id="email-label" for="email">Your email:</label>
+							<input id="email" type="email" required>
+						</div>
+						<button id="submit" type="submit">Submit</button>
+					</form>
+				</div>
+				<footer>
+					<div class="social github">
+						<a href="#" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+					</div>
+					<div class="social instagram">
+						<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+					</div>
+					<div class="social facebook">
+						<a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+					</div>
+				</footer>
 			</div>
 		</main>
-		<footer>
-			<!--place for soc icons-->
-		</footer>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

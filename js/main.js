@@ -1,4 +1,26 @@
 'use strict';
+
+var menu = document.querySelector(".main-menu");
+var button = document.querySelector(".menu-icon");
+var close = document.querySelector(".menu_state_open");
+var navHeight = document.getElementById("nav-bar");
+
+button.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	if (button.classList.contains("menu_state_open")) {
+		menu.classList.remove("menu_state_open");
+		button.classList.remove("menu_state_open");
+		navHeight.classList.remove("wide-wrapper");
+	} else {
+	menu.classList.add("menu_state_open");
+	button.classList.add("menu_state_open");
+	navHeight.classList.add("wide-wrapper");
+	};
+	
+});
+
+
+
 var multiItemSlider = (function () {
 
   function _isElementVisible(element) {
