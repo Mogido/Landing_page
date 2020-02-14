@@ -7,10 +7,10 @@
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<header>	
+		<header id="header">	
 			<nav id="nav-bar">
 				<div class="logo_wrapper">
-					<svg viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<svg id="header-img" viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<g>
 						  <radialGradient id="SVGID_1_" cx="44.9711" cy="56.6804" gradientTransform="matrix(1.0131 -6.244914e-03 -6.244914e-03 1.003 0.5425 -0.2582)" gradientUnits="userSpaceOnUse" r="71.7534">
 							<stop offset="0" style="stop-color:#22B511"/>
@@ -54,22 +54,29 @@
 					<span></span>
 				</div>
 				<ul class="main-menu">
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#cook">How to Cook</a></li>
-					<li><a href="#questions">Questionnaire</a></li>
+					<li><a class="nav-link" href="#gallery">Gallery</a></li>
+					<li><a class="nav-link" href="#cook">How to Cook</a></li>
+					<li><a class="nav-link" href="#questions">Questionnaire</a></li>
 				</ul>
 			</nav>
-			<a class="section-link" href="#f_or_v">Fruit or vegetable?</a>
+			<div class="grid-section">
+				<h1><a href="https://en.wikipedia.org/wiki/Avocado" target=_blank>AvoCaDo</a></h1>
+				<p class="main-text_1"><a href="https://www.medicalnewstoday.com/articles/270406.php" target="_blank">Just 1 ounce (28grams) provides good amounts of healthy fats, fiber, and protein.</a></p>
+				<p class="main-text_2"><a href="https://en.wikipedia.org/wiki/List_of_countries_by_avocado_production" target="_blank">Grows on trees in warmer climates and is native to </br>mexico.</a></p>
+				<p class="main-text_3"><a href="https://www.rd.com/food/fun/alternate-avocado-name/" target="_blank">*Alligator peer</a></p>
+				<p class="main-text_4"><a href="https://www.bbcgoodfood.com/recipes/collection/avocado" target="_blank">Avocado has gained popularity due to its stellar nutrient profile and diverse </br><u>culinary applications.</u></a></p>
+				<a class="section-link" href="#f_or_v">Fruit or vegetable?</a>
+			</div>
 		</header>
 		<main>
 			<div class="heading-wrapper">
-				<h2 class="visually-hidden">Why avocado is so popular?</h2>
+				<h3 class="visually-hidden">Why avocado is so popular?</h2>
 				<p>Avocado has gained popularity due to its stellar nutrient profile and diverse culinary applications. 
 					Rich in fiber, potassium, heart-healthy fats, and powerful antioxidants, this food may also offer various health benefits.</p>
 			</div>
-			<div class="text-section-wrapper">
+			<div id="f_or_v"class="text-section-wrapper">
 				<section class="content">
-					<h3 id="f_or_v">Fruit or vegetable?</h3>
+					<h3>Fruit or vegetable?</h3>
 					<p>Avocado is a fruit.</p>
 					<p>More specifically, botanists define it as a large berry with a single seed.<br>
 					Although it’s not nearly as sweet as many other fruits, it falls under the definition of fruit, which is "the sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food".<br>
@@ -78,9 +85,10 @@
 					SUMMARY The avocado is a fruit. In botanical terms, it’s a single-seeded berry that grows on trees in warmer climates and is native to Mexico.</p>
 					<p>***</p>
 				</section>
+				<div id="gallery"></div>
 			</div>
 			<div class="heading-wrapper">
-				<h2 id="gallery">Gallery</h2>
+				<h2 >Gallery</h2>
 			</div>
 			<div class="slider">
 				<div class="slider__wrapper">
@@ -121,9 +129,15 @@
 				<a class="slider__control slider__control_left" href="#" role="button"></a>
 				<a class="slider__control slider__control_right" href="#" role="button"></a>
 			  </div>
-			<div class="text-section-wrapper cook-wrapper">
+			<div class="heading-wrapper">
+				<h3 class="visually-hidden">Varieties of avocado.</h2>
+				<p>The most common types of avocados are Bacon, Fuerte, Gwen, Hass, Pinkerton, Reed and Zutano, with many chefs having a particular preference 
+					for the Hass variety. In some areas, the Hass avocado is known as the avocado pear or the alligator pear due to the pebbly, rough exterior 
+					of one of the most popular varieties. Even without a label, you can learn to distinguish them by look and feel.</p>
+			</div>
+			<div id="cook" class="text-section-wrapper cook-wrapper">
 				<section class="content content_video">
-					<h3 id="cook">How to add avocados to your diet?</h3>
+					<h3>How to add avocados to your diet?</h3>
 					<p>Avocados have many culinary applications.<br>
 					They’re most commonly used to make guacamole.<br>
 					This is done by simply mashing the avocado with lemon juice and adding other optional ingredients, such as onions, cilantro, chili, and tomatoes.<br>
@@ -132,16 +146,17 @@
 					Furthermore, their smooth and creamy texture makes them a great choice for puddings or smoothies.<br>
 					Lastly, avocados can be used as a replacement for butter — either as a spread or in baking.</p>
 					<div class="video-wrapper">
-						<iframe  src="https://www.youtube.com/embed/WDRujOJVykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe id="video" src="https://www.youtube.com/embed/WDRujOJVykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</section>
+				<div id="questions"></div>
 			</div>
 			<div class="heading-wrapper">
-				<h2 id="questions">Questionnaire</h2>
+				<h2 >Questionnaire</h2>
 			</div>
 			<div class="text-section-wrapper form-wrapper">
 				<div class="content form-content">
-					<form>
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
 						<label class="check-buttons">Your favorite avocado dish:
 							<label class="variable"><input type="radio" name="dish" value="Seasoned">Seasoned</label>
 							<label class="variable"><input type="radio" name="dish" value="Stuffed">Stuffed</label>
@@ -152,27 +167,30 @@
 							<label class="variable"><input type="radio" name="dish" value="In soups">In soups</label>
 							<label class="variable"><input type="radio" name="dish" value="Another:">Another</label>
 						</label>
-						<textarea class="comment-field" name="comment" rows="5" placeholder="Enter your comment here..."></textarea>
+						<textarea name="comment" rows="5" placeholder="Enter your comment here..."></textarea>
 						<div class="input-wrapper">
-							<label id="name-label" for="name">Your name:</label>
+							<label for="name">Your name:</label>
 							<input id="name" type="text" required>
 						</div>
 						<div class="input-wrapper">
-							<label id="email-label" for="email">Your email:</label>
+							<label for="email">Your email:</label>
 							<input id="email" type="email" required>
 						</div>
 						<button id="submit" type="submit">Submit</button>
 					</form>
+					<div class="top-button__wrapper">
+						<a class="back_to_top" title="Back to top"></a>
+					</div>
 				</div>
 				<footer>
 					<div class="social github">
-						<a href="#" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://github.com/Mogido/Landing_page" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 					</div>
 					<div class="social instagram">
-						<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="http:/instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
 					</div>
 					<div class="social facebook">
-						<a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+						<a href="http:/www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
 					</div>
 				</footer>
 			</div>

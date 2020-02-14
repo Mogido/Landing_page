@@ -4,6 +4,7 @@ var menu = document.querySelector(".main-menu");
 var button = document.querySelector(".menu-icon");
 var close = document.querySelector(".menu_state_open");
 var navHeight = document.getElementById("nav-bar");
+var topWrapper = document.querySelector('.top-button__wrapper');
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -19,7 +20,36 @@ button.addEventListener("click", function (evt) {
 	
 });
 
-
+(function() {
+	
+  
+	function trackScroll() {
+	  var scrolled = window.pageYOffset;
+	  var coords = document.documentElement.clientHeight;
+	  
+  
+	  if (scrolled > coords) {
+		goTopBtn.classList.add('back_to_top-show');
+		topWrapper.classList.add('back_to_top-show');
+	  }
+	  if (scrolled < coords) {
+		goTopBtn.classList.remove('back_to_top-show');
+		topWrapper.classList.remove('back_to_top-show');
+	  }
+	}
+  
+	function backToTop() {
+	  if (window.pageYOffset > 0) {
+		window.scrollBy(0, -80);
+		setTimeout(backToTop, 0);
+	  }
+	}
+  
+	var goTopBtn = document.querySelector('.back_to_top');
+  
+	window.addEventListener('scroll', trackScroll);
+	goTopBtn.addEventListener('click', backToTop);
+  })();
 
 var multiItemSlider = (function () {
 
